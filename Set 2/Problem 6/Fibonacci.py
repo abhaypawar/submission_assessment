@@ -1,9 +1,13 @@
-def Fibonacci_Series(n):
-	if n == 0:
+def Fibonacci(n):
+	if (n == 0):
 		return 0
-	elif n == 1 or n == 2:
+	elif (n == 1 or n==2):
 		return 1
 	else:
-		return Fibonacci_Series(n-1) + Fibonacci_Series(n-2)
+		return (Fibonacci(n - 1) + Fibonacci(n - 2))
 
-print(Fibonacci_Series(9))
+def printFibonacci(n):
+	for i in range(1, n):
+		print(Fibonacci(i), " ", end="")
+n = 7
+printFibonacci(n)
